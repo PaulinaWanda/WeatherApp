@@ -1,0 +1,68 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+/*mixins*/
+@mixin body-background($color, $img, $size){
+  background: $color $img no-repeat center;
+  background-size: $size;
+}
+@mixin div-background($color){
+  box-shadow: 0 0 2px 2px $color;
+  @include background (radial-gradient(center, $color, scale-lightness($color, 90%)));
+}
+/*variables*/
+$moderate-color: rgb(117, 157, 104);
+$moderate-img: url("https://s17.postimg.org/58vh5fykf/stawy3.jpg");
+$frost-color: rgb(49,70,99);
+$frost-img: url("https://s18.postimg.org/a9h6rgjyh/104_9077.jpg");
+$hot-color: rgb(176,162,135);
+$hot-img: url("https://s21.postimg.org/tsn5b0elj/DSC01392.jpg");
+/*style*/
+body {
+  font-family: 'Muli', sans-serif;
+  &.frost {
+    @include body-background($frost-color, $frost-img, 200%);
+    & div.weather {
+      @include div-background($frost-color);
+    }
+  }
+  &.moderate {
+    @include body-background($moderate-color, $moderate-img, 190%);
+    & div.weather {
+      @include div-background($moderate-color);
+    }
+  }
+  &.hot {
+    @include body-background($hot-color, $hot-img, 180%);
+    & div.weather {
+      @include div-background($hot-color);
+    }
+  }
+}
+div.weather {
+  position: absolute;
+  width: 35%;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  text-align: center;
+  padding: 5% 0;
+}
+ul {
+  list-style-type: none;
+}
+/*media queries*/
+@media screen and (max-width: 1250px){
+  .weather{
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 400px){
+  .weather{
+    width: 80% !important;
+  }
+}

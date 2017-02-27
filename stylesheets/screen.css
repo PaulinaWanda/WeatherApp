@@ -1,0 +1,81 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*mixins*/
+/*variables*/
+/*style*/
+/* line 24, ../sass/screen.scss */
+body {
+  font-family: 'Muli', sans-serif;
+}
+/* line 26, ../sass/screen.scss */
+body.frost {
+  background: #314663 url("https://s18.postimg.org/a9h6rgjyh/104_9077.jpg") no-repeat center;
+  background-size: 200%;
+}
+/* line 28, ../sass/screen.scss */
+body.frost div.weather {
+  box-shadow: 0 0 2px 2px #314663;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IiIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMxNDY2MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U3ZWNmMyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -moz-radial-gradient(center, #314663, #e7ecf3);
+  background: -webkit-radial-gradient(center, #314663, #e7ecf3);
+  background: radial-gradient(center, #314663, #e7ecf3);
+}
+/* line 32, ../sass/screen.scss */
+body.moderate {
+  background: #759d68 url("https://s17.postimg.org/58vh5fykf/stawy3.jpg") no-repeat center;
+  background-size: 190%;
+}
+/* line 34, ../sass/screen.scss */
+body.moderate div.weather {
+  box-shadow: 0 0 2px 2px #759d68;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IiIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc1OWQ2OCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YxZjVmMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -moz-radial-gradient(center, #759d68, #f1f5f0);
+  background: -webkit-radial-gradient(center, #759d68, #f1f5f0);
+  background: radial-gradient(center, #759d68, #f1f5f0);
+}
+/* line 38, ../sass/screen.scss */
+body.hot {
+  background: #b0a287 url("https://s21.postimg.org/tsn5b0elj/DSC01392.jpg") no-repeat center;
+  background-size: 180%;
+}
+/* line 40, ../sass/screen.scss */
+body.hot div.weather {
+  box-shadow: 0 0 2px 2px #b0a287;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IiIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IwYTI4NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y3ZjZmMyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -moz-radial-gradient(center, #b0a287, #f7f6f3);
+  background: -webkit-radial-gradient(center, #b0a287, #f7f6f3);
+  background: radial-gradient(center, #b0a287, #f7f6f3);
+}
+
+/* line 45, ../sass/screen.scss */
+div.weather {
+  position: absolute;
+  width: 35%;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  text-align: center;
+  padding: 5% 0;
+}
+
+/* line 55, ../sass/screen.scss */
+ul {
+  list-style-type: none;
+}
+
+/*media queries*/
+@media screen and (max-width: 1250px) {
+  /* line 60, ../sass/screen.scss */
+  .weather {
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 65, ../sass/screen.scss */
+  .weather {
+    width: 80% !important;
+  }
+}
