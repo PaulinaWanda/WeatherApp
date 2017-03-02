@@ -11,7 +11,7 @@ body {
 }
 /* line 26, ../sass/screen.scss */
 body.frost {
-  background: #314663 url("https://s18.postimg.org/a9h6rgjyh/104_9077.jpg") no-repeat center;
+  background: #314663 url("/frost.jpg") no-repeat center;
   background-size: 200%;
 }
 /* line 28, ../sass/screen.scss */
@@ -24,7 +24,7 @@ body.frost div.weather {
 }
 /* line 32, ../sass/screen.scss */
 body.moderate {
-  background: #759d68 url("https://s17.postimg.org/58vh5fykf/stawy3.jpg") no-repeat center;
+  background: #759d68 url("/moderate.jpg") no-repeat center;
   background-size: 190%;
 }
 /* line 34, ../sass/screen.scss */
@@ -37,7 +37,7 @@ body.moderate div.weather {
 }
 /* line 38, ../sass/screen.scss */
 body.hot {
-  background: #b0a287 url("https://s21.postimg.org/tsn5b0elj/DSC01392.jpg") no-repeat center;
+  background: #b0a287 url("/hot.jpg") no-repeat center;
   background-size: 180%;
 }
 /* line 40, ../sass/screen.scss */
